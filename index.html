@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body
+    {
+        background-color: yellow;
+    }
+    #time
+    {
+       background-color: black;
+       color: white;
+       border-radius: 10px;
+       font-size: large;
+       
+    }
+h1{
+    text-align: center;
+}
+div
+{
+    text-align: center;
+}
+  </style>
+  <body>
+    <h1>TIME CHEAK</h1>
+    <div><button id="time" type="button" onclick="mytime()">Cheak Time</button></div>
+    <h1 id="mytime"></h1>
+    <script>
+        function mytime()
+        {
+            const d=new Date();
+            document.getElementById('mytime').innerHTML=d;
+        }
+    </script>
+  </body>
+</html>
